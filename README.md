@@ -100,12 +100,6 @@ $$\beta^{(t+1)} = \beta^{(t)} - \eta_t \left( \nabla f(\beta^{(t)}) + \lambda g^
 - **S2 $(500,500)$**：CD $\gg$ FISTA $\approx$ PGD $>$ ADMM $\gg$ Subgrad。
 - **S3 $(200,1000)$**：CD $\gg$ FISTA $\approx$ PGD $>$ ADMM $\gg$ Subgrad。
 
-### 关键问题修正
-
-- 原 Subgrad 曲线“爆炸”至 $10^{16}$ 是因未标准化 $X$ 导致数值发散；修复后曲线平稳但缓慢。
-- 实际比较包含五种算法，而非仅三种，以全面反映现代实践。
-- 新增维度影响分析，明确 CD 在高维稀疏场景的优势。
-
 ---
 
 ## 结论与建议
